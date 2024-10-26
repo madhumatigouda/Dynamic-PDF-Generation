@@ -1,0 +1,5 @@
+package com.example.pdfgeneration.model;
+
+public class Invoice {
+
+}

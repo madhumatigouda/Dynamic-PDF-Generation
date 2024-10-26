@@ -1,0 +1,2 @@
+spring.application.name=Dynamic_PDF_Generation
+invoice.file.path=C:/Users/DELL/OneDrive/Desktop/Assessment/invoice.pdf

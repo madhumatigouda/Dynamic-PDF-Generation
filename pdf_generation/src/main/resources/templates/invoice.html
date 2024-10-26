@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header-table, .items-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .header-table td {
+            width: 50%;
+            border: 1px solid black;
+            padding: 30px;
+            vertical-align: top;
+        }
+        .items-table td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 8px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <table class="header-table">
+        <tr>
+            <td>
+                Seller:<br />
+                [[${seller}]]<br />
+                [[${sellerAddress}]]<br />
+                GSTIN: [[${sellerGstin}]]
+            </td>
+            <td>
+                Buyer:<br />
+                [[${buyer}]]<br />
+                [[${buyerAddress}]]<br />
+                GSTIN: [[${buyerGstin}]]
+            </td>
+        </tr>
+    </table>
+
+    <table class="items-table">
+        <tr>
+            <td>Item</td>
+            <td>Quantity</td>
+            <td>Rate</td>
+            <td>Amount</td>
+        </tr>
+        <tr th:each="item : ${items}">
+            <td>[[${item.name}]]</td>
+            <td>[[${item.quantity}]]</td>
+            <td>[[${item.rate}]]</td>
+            <td>[[${item.amount}]]</td>
+        </tr>
+    </table>
+
+
+</body>
+</html> 
+
+  
